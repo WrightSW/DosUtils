@@ -1,0 +1,61 @@
+unix2dos(1)                                                        unix2dos(1)
+
+
+
+NAME
+       unix2dos - UNIX to DOS file conversion
+
+SYNTAX
+       unix2dos {-q -d } filename filename ...
+
+       unix2dos {-h -v}
+
+Options
+       -q     Quiet mode
+
+       -d     Include debug messages in output to STDOUT
+
+       -h     Show program usage information
+
+       -v     Show program version information
+
+
+DESCRIPTION
+       The unix2dos program will convert line-endings of text files from UNIX-
+       style to DOS/Windows-style. This conversion is useful when transferring
+       text files from a UNIX system to a DOS/Windows system.
+
+       If  the file already has DOS-style line-endings, no change will result.
+
+
+INTERACTIONS
+       The program processes named files only, and  therefore  cannot  process
+       data through pipelines.
+
+
+SEE ALSO
+       dos2unix(1)
+
+
+AUTHORS
+       Michael Wright
+
+
+Copyright
+       Copyright  (C) 2005, 2013  Michael Wright
+
+       This  implementation of unix2dos is free software; you can redistribute
+       it and/or modify it under the  terms  of   the   GNU   General   Public
+       License as published by the Free Software Foundation; either version 3,
+       or (at your option) any later version.
+
+       This program is distributed in the hope that it  will  be  useful,  but
+       WITHOUT   ANY  WARRANTY;  without  even  the  implied  warranty of MER-
+       CHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU  General
+       Public License for more detail; either the included file license.txt or
+       on the web at http://www.gnu.org/licenses/.
+
+
+
+
+Version 1.2                       1 July 2013                      unix2dos(1)

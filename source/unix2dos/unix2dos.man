@@ -1,0 +1,65 @@
+.de EX		\"Begin unix2dos
+.ne 5
+.if n .sp 1
+.if t .sp .5
+.nf
+.in +.5i
+..
+.de EE
+.fi
+.in -.5i
+.if n .sp 1
+.if t .sp .5
+..
+.TH unix2dos 1 "1 July 2013" "Version 1.1"
+.SH NAME
+unix2dos - UNIX to DOS file conversion
+.SH SYNTAX
+.PP
+unix2dos {-q -d } filename filename ...
+
+unix2dos {-h }
+.SH Options
+.IP -q
+Quiet mode.
+.IP -d
+Include debug messages in output to STDOUT
+.IP -h
+Show program usage information.
+.PP
+.SH DESCRIPTION
+.PP
+The \fIunix2dos\fP program will convert line-endings of text files
+from UNIX-style to DOS/Windows-style. This conversion is useful when 
+transferring text files from a UNIX system to a DOS/Windows system.
+.PP
+If the file already has DOS-style line-endings, no change will result.
+.PP
+.SH INTERACTIONS
+.PP
+The program processes named files only, and therefore cannot process data through pipelines.
+.PP
+.SH FILES
+.PP
+ (none)
+.PP
+.SH SEE ALSO
+dos2unix(1)
+.PP
+.SH AUTHORS
+.PP
+Michael Wright
+.PP
+.SH Copyright
+Copyright  (C) 2005, 2013  Michael Wright 
+
+This implementation of unix2dos is free software; you can redistribute it and/or
+modify it under the terms
+of  the  GNU  General  Public License as published by the Free Software Foundation;
+either version 3, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but  WITHOUT  ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more detail; either
+the included file license.txt or on the web at http://www.gnu.org/licenses/.
+
