@@ -1,0 +1,6 @@
+This project is not being maintained.
+
+I hope this small project may serve as a useful starting point
+to create a more capable utility.
+
+Thank you for your interest!
